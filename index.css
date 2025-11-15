@@ -1,33 +1,38 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 
 }
 
-html, body{
+html,
+body {
     height: 100%;
     width: 100%;
     background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-#box{
+#box {
     height: 200px;
     width: 200px;
     margin: 25px;
-   background-color: white;
+    background-color: white;
 }
 
-#btn{
-    font-weight: 400;
-    background-color: aliceblue;
-    padding: 5px;
+#btn {
+    padding: 10px 20px;
+    background: #4a8cff;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 5px 0 #1e3f8a;
+    transition: 0.1s;
     cursor: pointer;
-    margin: 15px;
-    border-radius: 50px;
-    border: solid  1px;
 }
 
-#btn:hover{
-    background-color: rgb(0,145,123);
+#btn:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 0 #1e3f8a;
 }
